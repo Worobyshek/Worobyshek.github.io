@@ -1,0 +1,486 @@
+@font-face {
+    font-family: 'bergamasco';
+    src: url('../fonts/font-family/bergamasco/Bergamasco_Regular.ttf');
+}
+
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-< uniquifier > {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: < weight >;
+    font-style: normal;
+}
+
+.font-sm{
+    font-family: "Montserrat";
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+body {
+    /*background-color: rgba(228, 228, 228, 1);*/
+}
+
+.header-img-box{
+    min-width: 100%;
+    /*width: auto;*/
+    height: 285px;
+}
+
+
+.header-img {
+    background-image: url('../images/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+
+    border-radius: 70px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+.border-main{
+    border: 1px solid rgba(252, 252, 252, 0.2);
+    background-color: rgba(252, 252, 252, 0.2);
+    border-radius: 70px;
+
+}
+
+
+
+.range {
+    font-family: 'bergamasco';
+    font-size: 40px;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'bergamasco';
+
+}
+
+
+.font-button{
+    font-family: 'bergamasco';
+    font-size: 28px;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.font-button:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(72, 72, 72, 0.4);
+}
+
+.btn-lg, .btn-group-lg > .btn {
+    --bs-btn-padding-y: 0.7rem;
+    --bs-btn-padding-x: 2rem;
+    --bs-btn-font-size: 1.25rem;
+    --bs-btn-border-radius: var(--bs-border-radius-lg);
+}
+
+.oasis-font{
+    font-size: 3.8rem;
+}
+
+
+p {
+    font-family: "Montserrat";
+}
+
+.bold {
+    font-weight: 800;
+}
+
+span {
+    font-family: 'bergamasco';
+}
+
+
+.logo-img {
+    height: 29px;
+    width: 186px;
+}
+
+.logo-img-footer{
+    height: 30px;
+    width: 190px;
+}
+
+.color-header-text{
+  color: rgba(220, 220, 220, 1);
+}
+
+.color-header-text:hover{
+    color: rgba(112, 112, 112, 1);
+}
+
+.font-size-header {
+    font-size: 20px;
+}
+
+
+/*цвет кнопки, меняя bootstrap*/
+.btn-success {
+    --bs-btn-bg: white;
+    --bs-btn-border-color: white;
+    --bs-btn-hover-bg: white;
+}
+
+
+.container-main .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #555;
+    color: white;
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+.carousel-item img {
+    border-radius: 70px;
+}
+
+.three {
+    border-radius: 70px;
+    height: 500px;
+    width: 650px;
+}
+
+.backgraund-main {
+    height: 60px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 25px;
+
+}
+
+.icon_1 {
+    height: 90px;
+    width: 90px;
+}
+
+.icon_2{
+    height: 81px;
+    width: 81px;
+}
+
+
+.icon_3{
+    height: 82px;
+    width: 82px;
+}
+.icon_4{
+    height: 80px;
+    width: 80px;
+}
+
+.backgraund-block{
+    /*width: 600px;*/
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 70px;
+}
+
+.border-carousel{
+
+    border-color: rgba(252, 252, 252, 0.5);
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 70px;
+}
+.btn{
+    border-radius: 24%/90%;
+}
+
+
+
+.card{
+    border-radius:20%;
+}
+
+.card-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.star{
+    height: 23px;
+    width: 35%;
+}
+
+.btn-color{
+    color: rgba(34, 34, 34, 1);
+    background-color: rgba(252, 252, 252, 0.8);
+
+}
+
+.btn-color:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(252, 252, 252, 0.3);
+}
+
+.btn-color-2{
+    box-shadow: 0px -1px 10.3px 5px rgba(0, 0, 0, 0.25);
+    color: rgba(238, 237, 237, 1);
+    background-color:rgba(255, 255, 255, 0.2);
+}
+
+.btn-color-2:hover{
+    color: rgba(72, 72, 72, 1);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.btn-color-carousel{
+    box-shadow: 0px -1px 10.3px 5px rgba(0, 0, 0, 0.25);
+    background-color:rgba(217, 217, 217, 0.4);
+    color:rgba(252, 252, 252, 1);
+}
+
+.btn-color-carousel:hover{
+    box-shadow: 0px -1px 10.3px 5px rgba(0, 0, 0, 0.25);
+    background-color:rgba(217, 217, 217, 0.8);
+    color:rgba(72, 72, 72, 1);
+}
+
+.btn-rgb{
+    box-shadow: 0 -1px 10.3px 5px rgba(0, 0, 0, 0.25);
+    color:rgba(78, 77, 77, 1);
+}
+
+.btn-color-3{
+    font-family: bergamasco;
+    color:rgba(34, 34, 34, 1);
+    background-color: rgba(240, 240, 240, 1);
+    border-radius: 40px;
+}
+
+.btn-color-3:hover{
+    color:rgba(255, 255, 255, 1);
+    background-color: rgba(72, 72, 72, 0.4);
+}
+
+.color-text{
+color:rgba(154, 153, 153, 1);
+}
+
+
+
+.border-order{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 70px;
+}
+
+.custom-card-width{
+    min-width: 100%;
+}
+
+.custom-class p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.color-text-footer-geo{
+    color: rgba(230, 230, 230, 1);
+}
+
+.color-text-beautiful{
+    color: rgba(230, 230, 230, 1);
+}
+
+.text-footer-color{
+    color: rgba(230, 230, 230, 1);
+}
+
+.flex-column li a{
+    color: rgba(220, 220, 220, 1);
+    margin-bottom: 4px;
+}
+
+.flex-column li a:hover{
+color: rgba(112, 112, 112, 1);
+}
+
+.flex-column li p{
+    margin-bottom: 3px;
+}
+
+.bg-castom{
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 70px;
+}
+
+#tsparticles{
+    z-index: -1;
+    /*overflow: hidden;*/
+    filter: blur(2.5rem);
+    position: absolute;
+    background-size: cover;
+    width: 100%;
+    height: 4364px;
+}
+
+.social-icons img{
+    width: 28px;
+    height: 28px;
+}
+
+
+.btn-up {
+    border:#D9D9D9;
+    color: #3A5A40;
+    position: fixed;
+    background-color: #D9D9D9;
+    right: 200px;
+    bottom: 50px;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    background-image: url(../images/btn-up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30px;
+    opacity: 0.6;
+}
+
+.btn-up:hover{
+    opacity: 0.9;
+    background-color: rgba(217, 217, 217, 0.8);
+    background-image: url(../images/btn-up-2.png);
+}
+
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    margin-left: 17%;
+    margin-top: 20px;
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 13px;
+    height: 13px;
+    padding: 0;
+    margin-right: 20px;
+    margin-left: 10px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(196, 196, 196, 1);
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+.carousel-indicators .active {
+    width: 18px;
+    height: 18px;
+    background-color: #222222;
+    opacity: 1;
+}
+
+/*стрелочки*/
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25%;
+    padding: 0;
+    color: #222222;
+    text-align: center;
+    background: none;
+    border: 0;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+.carousel-control-prev-icon {
+    background: url("../images/arrow-left.png") no-repeat;
+    background-size: 16px;
+}
+.carousel-control-next-icon {
+    background: url("../images/arrow-right.png") no-repeat;
+    background-size: 16px;
+}
+
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+    opacity: 0.5;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: 0.9;
+}
+
+.carousel-item img{
+    min-height: 400px;
+    min-width: 400px;
+}
+
+.image-container {
+    color: rgba(252, 252, 252, 1);
+    background-color: ;
+    position: relative;
+}
+
+.image-container button {
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (max-width: 767px) {
+    .border-bottom-md{
+        border-bottom: black 1px solid;
+    }
+    .border-bottom-md:nth-child(2){
+        border-right: none !important;
+    }
+    .oasis-font{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 576px){
+   .card-media-img{
+       height:100%!important;
+   }
+}
