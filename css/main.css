@@ -99,7 +99,6 @@ h1, h2, h3, h4, h5 {
     font-size: 3.8rem;
 }
 
-
 p {
     font-family: "Montserrat";
 }
@@ -204,11 +203,12 @@ span {
 }
 
 .border-carousel{
-
     border-color: rgba(252, 252, 252, 0.5);
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 70px;
 }
+
+
 .btn{
     border-radius: 24%/90%;
 }
@@ -417,7 +417,7 @@ color: rgba(112, 112, 112, 1);
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 25%;
+    width: 15%;
     padding: 0;
     color: #222222;
     text-align: center;
@@ -456,7 +456,6 @@ color: rgba(112, 112, 112, 1);
 
 .image-container {
     color: rgba(252, 252, 252, 1);
-    background-color: ;
     position: relative;
 }
 
@@ -465,6 +464,11 @@ color: rgba(112, 112, 112, 1);
     top: 87%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+textarea::placeholder, input::placeholder{
+    color: rgba(154, 153, 153, 1) !important;
+    font-size: 18px;
 }
 
 @media (max-width: 767px) {
@@ -480,7 +484,16 @@ color: rgba(112, 112, 112, 1);
 }
 
 @media (max-width: 576px){
-   .card-media-img{
+   .card-media-img {
        height:100%!important;
    }
+    .carousel-item img{
+        min-height: 285px;
+        min-width: 285px;
+    }
+    textarea::placeholder, input::placeholder{
+        font-size: 13px;
+    }
 }
+
+
