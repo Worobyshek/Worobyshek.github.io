@@ -77,35 +77,50 @@ $(document).ready(async function () {
 });
 
 
+// Get the button:
+let mybutton = document.getElementById("myBtn");
 
-const btnUp = {
-    el: document.querySelector('.btn-up'),
-    show() {
-        // удалим у кнопки класс btn-up_hide
-        this.el.classList.remove('btn-up_hide');
-    },
-    hide() {
-        // добавим к кнопке класс btn-up_hide
-        this.el.classList.add('btn-up_hide');
-    },
-    addEventListener() {
-        // при прокрутке содержимого страницы
-        window.addEventListener('scroll', () => {
-            // определяем величину прокрутки
-            const scrollY = window.scrollY || document.documentElement.scrollTop;
-            // если страница прокручена больше чем на 400px, то делаем кнопку видимой, иначе скрываем
-            scrollY > 400 ? this.show() : this.hide();
-        });
-        // при нажатии на кнопку .btn-up
-        document.querySelector('.btn-up').onclick = () => {
-            // переместим в начало страницы
-            window.scrollTo({
-                top: 0,
-                left: 0,
-                behavior: 'smooth'
-            });
-        }
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+        mybutton.style.display = "block";
+    } else {
+        mybutton.style.display = "none";
     }
 }
 
-btnUp.addEventListener();
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
+
+
+
+document.getElementById("more1").addEventListener("click", function () {
+    document.getElementById("fullText1").style.display = "block";
+    document.getElementById("more1").style.display = "none";
+});
+document.getElementById("more2").addEventListener("click", function () {
+    document.getElementById("fullText2").style.display = "block";
+    document.getElementById("more2").style.display = "none";
+});
+document.getElementById("more3").addEventListener("click", function () {
+    document.getElementById("fullText3").style.display = "block";
+    document.getElementById("more3").style.display = "none";
+});
+
+
+if (/Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+    // Код для мобильных устройств
+} else {
+    // Код для компьютеров
+}
+
+
+
+
+
