@@ -1,0 +1,518 @@
+@font-face {
+    font-family: 'bergamasco';
+    src: url('../fonts/font-family/bergamasco/Bergamasco_Regular.ttf');
+}
+
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.montserrat-< uniquifier > {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: < weight >;
+    font-style: normal;
+}
+
+body{
+    background-color: rgba(228, 228, 228, 1);
+}
+.text-1{
+    margin-top: 50px;
+    margin-left: 4px;
+    position: absolute;
+    font-family: 'bergamasco', serif;
+    color: rgba(252, 252, 252, 1);
+}
+
+.background {
+    height: 160px;
+    width: 402px;
+    background-position: center;
+    background-image: url('../images/imgFlow.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.background:before{
+    content: '';
+    display: block;
+    height: 160px;
+    width: 390px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:rgba(0, 0, 0, .5);
+}
+
+.navbar{
+    position: absolute;
+    margin-top: -100px;
+}
+
+.text {
+    font-family: bergamasco, serif;
+    color: white;
+    font-size: 2em;
+}
+
+.logo-img{
+    height: 17px;
+    width: 104px;
+}
+
+
+.red-square-cat {
+    position: relative;
+    width: 46px;
+    height: 46px;
+}
+
+.font-b{
+    font-weight: 500;
+}
+
+/*Почему мы?*/
+
+.border-what{
+    line-height: 1;
+    font-family: bergamasco, serif;
+    border-radius: 27px;
+    background-color: rgba(252, 252, 252, 0.5);
+}
+
+.create-line{
+    height: 100px;
+    border-left: 1px solid ;
+}
+
+
+/*Бургер*/
+/* скрываем чекбокс */
+.hamburger-menu {
+    z-index: 1;
+    left: 180px;
+    justify-content: space-between;
+    position: absolute;
+    display: flex; /* Используем flex для центрирования содержимого */
+
+}
+#menu__toggle {
+    opacity: 0;
+}
+/* стилизуем кнопку */
+.menu__btn {
+    display: flex; /* используем flex для центрирования содержимого */
+    align-items: center;  /* центрируем содержимое кнопки */
+    align-content: end;
+    top: 20px;
+    left: 20px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    z-index: 1;
+}
+/* добавляем "гамбургер" */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+
+    display: block;
+    position: absolute;
+    width: 20px;
+
+    height: 1px;
+    background-color: rgba(255, 255, 255, 1);
+}
+.menu__btn > span::before {
+    content: '';
+    top: -8px;
+}
+.menu__btn > span::after {
+
+    content: '';
+    top: 8px;
+}
+/* контейнер меню */
+.menu__box {
+
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    top: 0;
+    right: -100%;
+    width: 390px;
+    height: 190px;
+    padding-top: 40px;
+    list-style: none;
+    text-align: end;
+    background: url("/images/chernyy-fon-cvety-babochka.webp");
+    opacity:0.9;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+/* элементы меню */
+.menu__item {
+    margin-left: 5px;
+    display: block;
+    color: rgba(252, 252, 252, 1);
+    font-family: "Montserrat", sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    text-decoration: none;
+}
+.menu__item:hover {
+    background-color: #CFD8DC;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+
+    visibility: visible;
+    left: 0;
+}
+
+
+
+
+
+.font-button{
+    padding: 3px 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    background-color: rgba(240, 240, 240, 1);
+}
+
+.font-button:hover{
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(72, 72, 72, 0.4);
+}
+
+.border-main{
+    border: 1px solid rgba(252, 252, 252, 0.2);
+    background-color: rgba(252, 252, 252, 0.2);
+    border-radius: 70px;
+
+}
+
+/*Карусель*/
+
+.border-carousel{
+    margin: 0.1em;
+    border-color: rgba(252, 252, 252, 0.5);
+    background-color: rgba(252, 252, 252, 0.5);
+    border-radius: 40px;
+}
+
+.carousel-indicators {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+
+    margin-bottom: 10px;
+
+}
+.carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    padding: 0;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 0;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(196, 196, 196, 1);
+    background-clip: padding-box;
+    border: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    opacity: 0.5;
+    transition: opacity 0.6s ease;
+}
+.carousel-indicators .active {
+    margin-top: -2px;
+    width: 16px;
+    height: 16px;
+    background-color: #222222;
+    opacity: 1;
+}
+
+.btn{
+    border-radius: 40px;
+}
+
+.btn-carousel{
+    transform: translate(-1%, -26%);
+    background-color: rgba(217, 217, 217, 0.4);
+    color: rgba(34, 34, 34, 1);
+    width: 152px;
+    height: 48px;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: url('../images/arrow-left2.png');
+    margin-right: 10px;
+}
+
+.carousel-control-next-icon {
+    background-image: url('../images/arrow-right2.png');
+    margin-left: 10px;
+}
+
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    width: 30px;
+    height: 45px;
+    margin-bottom: 80px;
+}
+
+
+.carousel-item img{
+    min-height: 270px;
+    min-width: 270px;
+}
+
+.image-container {
+
+    color: rgba(252, 252, 252, 1);
+
+}
+.img-carousel{
+border-radius: 35px;
+
+}
+.font-ass{
+    font-family: bergamasco, serif;
+}
+.font-pp{
+    font-family: "Montserrat", serif;
+    font-size: 18px;
+}
+/*Преимущества*/
+
+.icon_1 {
+    height: 50px;
+    width: 50px;
+}
+
+.icon_2{
+    height: 50px;
+    width: 50px;
+}
+
+
+.icon_3{
+    height: 50px;
+    width: 50px;
+}
+.icon_4{
+    height: 50px;
+    width: 50px;
+}
+
+
+.container-border{
+    width: 180px;
+    line-height: 1.1em;
+
+    color: rgba(231, 231, 231, 1);
+
+    font-size: 18px;
+    font-family: 'bergamasco', serif;
+    border-radius: 30px;
+}
+
+
+.backgraund-block{
+
+    background-color: rgba(34, 34, 34, 1);
+}
+
+/*Акции*/
+.bg-image-sell{
+    border-radius: 25px;
+}
+.font-sell{
+    font-family: bergamasco, serif;
+}
+.font-text-sell{
+    margin-top: 17px;
+    font-family: bergamasco, serif;
+    font-size: 19px;
+    line-height: 1.2em;
+}
+.font-date{
+    font-family: "Montserrat", serif;
+    font-size: 16px;
+}
+
+
+/*Отзывы*/
+
+.font-reviews{
+    font-family: bergamasco, serif;
+}
+
+label {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.image-review{
+    margin-left: 20px;
+    margin-top: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+.Name{
+    margin-left: 60px;
+    margin-top: 15px;
+    font-family: 'bergamasco', serif;
+}
+
+.main-card{
+    border-radius: 30px;
+    margin-top: 5px;
+
+}
+/*Мой размер star*/
+.w-40 {
+    width: 40% !important;
+}
+
+/*Сворачивания 1*/
+.hidden-more,
+label span:nth-child(2),
+#more:checked~label span:nth-child(1) {
+    display: none;
+}
+
+#more:checked+.hidden-more,
+#more:checked~label span:nth-child(2) {
+    display: block;
+}
+
+
+/*Сворачивания 2*/
+
+.hidden-more2,
+label span:nth-child(2),
+#more2:checked~label span:nth-child(1) {
+    display: none;
+}
+
+#more2:checked+.hidden-more2,
+#more2:checked~label span:nth-child(2) {
+    display: block;
+}
+
+/*Сворачивания 3*/
+
+.hidden-more3,
+label span:nth-child(2),
+#more3:checked~label span:nth-child(1) {
+    display: none;
+}
+
+#more3:checked+.hidden-more3,
+#more3:checked~label span:nth-child(2) {
+    display: block;
+}
+
+/*Форма заказа*/
+.border-order{
+    width: 370px;
+    height: 360px;
+    background-color: rgba(34, 34, 34, 1);
+    border-radius: 40px;
+}
+
+.custom-color{
+    background-color: rgba(34, 34, 34, 1);
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.custom-color::placeholder{
+    color:rgba(154, 153, 153, 1) ;
+}
+.color-text{
+    color: rgba(154, 153, 153, 1);
+}
+
+.btn-color-3{
+    font-family: "Montserrat", sans-serif;
+    color:rgba(34, 34, 34, 1);
+    background-color: rgba(217, 217, 217, 0.4);
+    border-radius: 40px;
+}
+
+
+
+.font-order{
+    font-family: bergamasco, serif;
+    color:rgba(228, 228, 228, 1);
+}
+
+.text-form{
+
+    border-radius: 11px;
+}
+
+
+/*Подвал*/
+.bg-castom{
+    width: 390px;
+    height: 205px;
+    background-color: rgba(34, 34, 34, 1);
+
+}
+
+.logo-img-footer{
+    height: 13px;
+    width: 80px;
+}
+
+.font-sm{
+    font-family: "Montserrat", serif;
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.social-icons img{
+    margin-left: 5px;
+    height: 27px;
+    width: 27px;
+}

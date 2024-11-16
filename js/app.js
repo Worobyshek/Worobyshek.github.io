@@ -114,12 +114,6 @@ document.getElementById("more3").addEventListener("click", function () {
 });
 
 
-if (/Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-    // Код для мобильных устройств
-} else {
-    // Код для компьютеров
-}
-
 
 
 
