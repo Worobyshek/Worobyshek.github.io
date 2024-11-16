@@ -28,7 +28,7 @@ body{
 }
 .text-1{
     margin-top: 50px;
-    margin-left: 4px;
+    margin-left: -88px;
     position: absolute;
     font-family: 'bergamasco', serif;
     color: rgba(252, 252, 252, 1);
@@ -36,11 +36,11 @@ body{
 
 .background {
     height: 160px;
-    width: 402px;
+    width: 100%;
     background-position: center;
     background-image: url('../images/imgFlow.jpg');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +50,7 @@ body{
     content: '';
     display: block;
     height: 160px;
-    width: 390px;
+    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
@@ -71,6 +71,7 @@ body{
 }
 
 .logo-img{
+margin-left: -155px;
     height: 17px;
     width: 104px;
 }
@@ -105,7 +106,7 @@ body{
 /* скрываем чекбокс */
 .hamburger-menu {
     z-index: 1;
-    left: 180px;
+    left: 170px;
     justify-content: space-between;
     position: absolute;
     display: flex; /* Используем flex для центрирования содержимого */
@@ -134,7 +135,6 @@ body{
     display: block;
     position: absolute;
     width: 20px;
-
     height: 1px;
     background-color: rgba(255, 255, 255, 1);
 }
@@ -149,7 +149,6 @@ body{
 }
 /* контейнер меню */
 .menu__box {
-
     display: block;
     position: fixed;
     visibility: hidden;
@@ -168,6 +167,7 @@ body{
 }
 /* элементы меню */
 .menu__item {
+
     margin-left: 5px;
     display: block;
     color: rgba(252, 252, 252, 1);
@@ -177,10 +177,12 @@ body{
     text-decoration: none;
 }
 .menu__item:hover {
+
     background-color: #CFD8DC;
 }
 
 #menu__toggle:checked ~ .menu__btn > span {
+    position: fixed;
     transform: rotate(45deg);
 }
 #menu__toggle:checked ~ .menu__btn > span::before {
@@ -227,6 +229,7 @@ body{
     border-color: rgba(252, 252, 252, 0.5);
     background-color: rgba(252, 252, 252, 0.5);
     border-radius: 40px;
+
 }
 
 .carousel-indicators {
@@ -237,8 +240,8 @@ body{
     z-index: 2;
     display: flex;
     justify-content: center;
-
     margin-bottom: 10px;
+
 
 }
 .carousel-indicators [data-bs-target] {
@@ -259,6 +262,7 @@ body{
     border-bottom: 10px solid transparent;
     opacity: 0.5;
     transition: opacity 0.6s ease;
+
 }
 .carousel-indicators .active {
     margin-top: -2px;
@@ -320,7 +324,16 @@ border-radius: 35px;
     font-family: "Montserrat", serif;
     font-size: 18px;
 }
+
+/*почему мы?*/
+.why-us-size{
+    width: 100%;
+}
+
+
 /*Преимущества*/
+
+
 
 .icon_1 {
     height: 50px;
@@ -494,7 +507,7 @@ label span:nth-child(2),
 
 /*Подвал*/
 .bg-castom{
-    width: 390px;
+    width: 100%;
     height: 205px;
     background-color: rgba(34, 34, 34, 1);
 

@@ -18,19 +18,19 @@
 </head>
 <body>
 <!--Шапка-->
-<div class="background flex-column row">
+<div class="background ">
     <nav class="navbar">
         <div class="container-fluid ">
-            <a class="navbar-brand logo-img align-content-start col-6 mb-5" href="#"><img src="images/logo.png"
-                                                                                          class="logo-img ms-1"
-                                                                                          alt="..."></a>
-            <div class="hamburger-menu col-6">
+            <a class="navbar-brand" href="#"><img src="images/logo.png"
+                                                             class="logo-img "
+                                                             alt="..."></a>
+            <div class="hamburger-menu z-3">
                 <input id="menu__toggle" type="checkbox"/>
                 <label class="menu__btn" for="menu__toggle">
                     <span></span>
                 </label>
                 <ul class="menu__box ">
-                    <div class="container-fluid">
+                    <div class="container-fluid ">
 
                         <li><a class="menu__item mt-3" href="#">Главная</a></li>
                         <li><a class="menu__item mt-3" href="#">Ассортимент</a></li>
@@ -52,13 +52,13 @@
     </p>
 </div>
 <!--Почему мы?-->
-<div class="container mb-3">
+<div class="container mb-3 justify-content-center why-us-size">
     <img src="images/Group%2078.svg" alt="">
 </div>
 <!--Преимущества-->
 
 <div class="container z-1">
-    <div class="row text-white row-gap-2 column-gap-2 mb-3  ">
+    <div class="row text-white row-gap-2 column-gap-2 mb-3 justify-content-center">
         <div class="col-6 backgraund-block text-center container-border pt-3 pb-1 ms-2">
             <img src="images/icon_1.png" class="icon_1 ">
             <span class=" ">Бесплатная Записка</span>
@@ -67,11 +67,11 @@
             <img src=" images/icon_3.png" class="icon_3 ">
             <p class=""> Памятка<br> по уходу</p>
         </div>
-        <div class="col-5 backgraund-block text-center container-border pt-3 pb-1 ms-2">
+        <div class="col-6 backgraund-block text-center container-border pt-3 pb-1 ms-2">
             <img src="images/icon_2.png" class="icon_2 ">
             <p class=""> Фото <br>перед отправкой</p>
         </div>
-        <div class="col-5 backgraund-block text-center container-border pt-3 pb-1 ">
+        <div class="col-6 backgraund-block text-center container-border pt-3 pb-1 ">
             <img src="images/icon_4.png" class="icon_4 ">
             <span class="">Круглосуточная поддержка</span>
         </div>
@@ -79,14 +79,14 @@
 </div>
 <!--Карусель-->
 <div class="container text-center z-1 ">
-    <div class="row border-carousel border pb-1">
+    <div class="row border-carousel border pb-1 ">
         <h3 class="fs-1 mt-3 font-ass">Ассортимент</h3>
         <p class=" mb-2 font-pp ">Предлагаем разнообразие зелени, подходящей как для начинающих,<br>
             так и для опытных садоводов.</br></p>
-        <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators" class="carousel slide carousel-fade " data-bs-ride="carousel">
             <div class="carousel-inner ">
                 <div class="carousel-item active ">
-                    <div class="image-container">
+                    <div class="image-container ">
                         <img src="images/palm.png" class="img-carousel w-50 position-relative " alt="...">
                         <button type="button"
                                 class="fs-3 btn montserrat- btn-light  btn-carousel ">
@@ -96,7 +96,7 @@
                 </div>
                 <div class="carousel-item">
                     <div class="image-container">
-                        <img src="images/bonsai.png" class="img-carousel w-50" alt="...">
+                        <img src="images/bonsai.png" class="img-carousel w-50 " alt="...">
                         <button type="button" class="fs-3 btn montserrat- btn-light  btn-carousel  ">
                             бонсай
                         </button>
@@ -126,10 +126,10 @@
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
                     data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
                 <span class="visually-hidden">Следующий</span>
             </button>
-            <div class="carousel-indicators">
+            <div class="carousel-indicators z-2">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
                         class="rounded-circle active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
@@ -275,7 +275,7 @@
 
 
 <!--Подвал-->
-<div class="container bg-castom z-1 mt-4 ps-0 text-white ">
+<div class="container-fluid bg-castom z-1 mt-4 ps-0 text-white ">
         <a class="navbar-brand" href="#"><img src="images/img_footer.png" class="logo-img-footer ms-3 mt-3"></a>
         <p class=" kanit-light color-text-beautiful mt-1 ms-3">Природная красота у вас дома.<br>
             Выбирайте растения с любовью и заботой!</p>
